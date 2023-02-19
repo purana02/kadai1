@@ -8,11 +8,10 @@ header{
   background-color:#FF9A4B;
 }
 
-.main-contents{
+main{
   width:960px;
   display:flex;
   margin:50px auto;
-  position:relative;
 }
 
 .step-box{
@@ -20,14 +19,14 @@ header{
   background-color:#EEEEEE;
   margin-right:30px;
   padding:10px;
+  position:relative;
 }
 
 .step-box:last-child{
   margin-right:0px;
-
 }
 
-.step1{
+.step{
   background-color:#FF9A4B;
   color:#fff;
   position:absolute;
@@ -42,27 +41,11 @@ header{
   background-size:cover;
 }
 
-.step2{
-  background-color:#FF9A4B;
-  color:#fff;
-  position:absolute;
-  top:0px;
-  left:330px;
-}
-
 .step-visual2{
   height:150px;
   background-image:url(img/flow02.png);
   background-position:bottom;
   background-size:cover;
-}
-
-.step3{
-  background-color:#FF9A4B;
-  color:#fff;
-  position:absolute;
-  top:0px;
-  left:660px;
 }
 
 .step-visual3{
@@ -80,4 +63,28 @@ header{
 footer{
   height:50px;
   background-color:#AAAAAA;
+}
+
+@media screen and (max-width:768px){
+  header{
+    width:100%;
+  }
+
+  main{
+    width:90%;
+    display:block;
+  }
+
+  .step-box{
+    width:100%;
+    margin-bottom:20px;
+  }
+
+  .step-box:last-child{
+  margin-bottom:0px;
+}
+
+  footer{
+    width:100%;
+  }
 }
